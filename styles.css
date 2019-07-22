@@ -1,0 +1,59 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono&display=swap');
+
+:root {
+  --c-red: #F83036;
+  --c-blue: #2BA6FF;
+  --c-gray: #9EB0C2;
+  --c-navy: #31445D;
+  --c-lightgray: #DCE3EB;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Roboto Mono', Monaco, monospace;
+}
+
+table {
+  border: 1px solid var(--c-navy);
+  margin: 4rem;
+  font-size: .8rem;
+  min-width: 980px;
+  margin: 4rem auto;
+}
+table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+table thead th {
+  padding: 1rem;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+table tr td {
+  padding: 1rem;
+  border-top: 1px solid var(--c-navy);
+}
+table tr.highlight td {
+  background: var(--c-lightgray);
+}
+
+table tr td:nth-child(3) {
+  color: var(--c-blue);
+  text-align: center;
+  border-left: 1px solid var(--c-navy);
+}
+table tr td:nth-child(4) {
+  color: var(--c-red);
+  text-align: center;
+  border-left: 1px solid var(--c-navy);
+}
+table tr td:nth-child(5) {
+  color: var(--c-navy);
+  text-align: center;
+  border-left: 1px solid var(--c-navy);
+}
